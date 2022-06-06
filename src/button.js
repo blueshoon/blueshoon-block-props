@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import { useBlockProps } from '@wordpress/block-editor';
 
-function Button( props ) {
+const Button = ( props ) => {
 	const { attributes, className } = props;
 	const blockProps = useBlockProps.save()
 	const classes = classnames( 'blueshoon-button', className )
