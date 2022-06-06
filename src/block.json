@@ -1,0 +1,28 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "blueshoon/blueshoon-block-props",
+	"title": "Blueshoon Block Props",
+	"textdomain": "blueshoon-domain",
+	"icon": "flag",
+	"category": "text",
+	"attributes": {
+		"message": {
+			"type": "string",
+			"source": "text",
+			"selector": "button",
+      "default": "Button"
+		},
+		"align": {
+			"type": "string",
+			"default": "center"
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
