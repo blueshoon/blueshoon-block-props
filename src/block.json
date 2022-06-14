@@ -1,26 +1,19 @@
 {
-	"$schema": "https://json.schemastore.org/block.json",
+	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
 	"name": "blueshoon/blueshoon-block-props",
+	"version": "0.1.0",
 	"title": "Blueshoon Block Props",
 	"textdomain": "blueshoon-domain",
-	"icon": "flag",
-	"category": "text",
+	"icon": "smiley",
+	"category": "widgets",
+	"supports": {
+		"html": false
+	},
 	"attributes": {
 		"message": {
-			"type": "string",
-			"source": "text",
-			"selector": "button",
-      "default": "Button"
-		},
-		"align": {
-			"type": "string",
-			"default": "center"
+			"type": "string"
 		}
-	},
-	"supports": {
-		"html": false,
-		"align": true
 	},
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
